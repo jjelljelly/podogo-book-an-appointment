@@ -6,16 +6,18 @@
 .sidebar-container {
     height: 100vh;
     width: 32%;
-    background-color: var(--the-white);
+    background-color: var(--the-gray);
     margin: 0;
-    /*-webkit-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
-    -moz-box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);
-    box-shadow: 10px 0px 22px -6px rgba(0,0,0,0.5);*/
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     overflow-y: scroll;
+}
+
+.pod-logo {
+    width: 65%;
+    max-width: 500px;
 }
 
 .close-button {
@@ -71,9 +73,8 @@
 }
 
 .progression {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,17 +89,6 @@
     justify-content: flex-start;
 }
 
-.linked {
-    color: var(--the-white);
-    text-decoration: none;
-    font-size: 1.4vw;
-}
-
-.linked:hover {
-    color: var(--main-color);
-
-}
-
 .fine-print {
     margin: 20px 0 100px 0;
     font-size: 12px;
@@ -110,6 +100,10 @@
         z-index: 800;
         height: 100vh;
         display: none;
+    }
+    
+    .sidebar-scroll {
+        width: 60%;
     }
 
     .sidebar-titles h1 {

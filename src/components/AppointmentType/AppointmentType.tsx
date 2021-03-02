@@ -43,7 +43,7 @@ const AppointmentType: React.FC<Props> = (props) => {
 
     return (
         <div className="appointment-container">
-            <h1 className="portal-title mobile-title">London Foot & Ankle Surgery</h1>
+            <h1 className="portal-title mobile-title">PODOGO</h1>
             <h2 className="adaptable-title">Select An Appointment Type</h2>
             {
                 appointments.map((appointment, i) => {

@@ -11,7 +11,6 @@ const MenuButton: React.FC<Props> = (props) => {
             aria-label="toggle navigation menu on mobile"
             className="menu-button"
             onClick={() => props.setToggle()}
-            style={props.show ? {border: 'none'} : {border: 'none'}}
             >
             {
                 !props.show ?
@@ -20,7 +19,7 @@ const MenuButton: React.FC<Props> = (props) => {
                         <div className="stripe"></div>
                         <div className="stripe"></div>
                     </> :
-                    <div className="exit-cross">|X|</div>
+                    <div className="exit-cross">X</div>
             }
         </button>
     )

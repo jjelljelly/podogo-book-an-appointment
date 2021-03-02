@@ -218,7 +218,7 @@ const BookingForm: React.FC<Props> = (props) => {
                                 onChange={() => setPrivacy(!privacy)} 
                                 required 
                                 />
-                            <p>By ticking this box you indicate that you have read and agree with our<a href="https://www.londonfootandanklesurgery.co.uk/about-us/privacy-policy/" target="_blank" rel="noreferrer">&nbsp;Privacy Policy&nbsp;</a></p>
+                            <p>By ticking this box you indicate that you have read and agree with our<a href="https://www.podogo.com/privacy-policy/" target="_blank" rel="noreferrer">&nbsp;Privacy Policy&nbsp;</a></p>
                         </div>
                     </label>
                     {

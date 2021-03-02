@@ -1,6 +1,7 @@
 import { useState, useLayoutEffect } from 'react'
 import Link from '../Link/Link'
 import MenuButton from '../MenuButton/MenuButton'
+import logo from '../../images/podogo-logo.svg'
 import './Sidebar.css'
 
 interface Props {
@@ -11,8 +12,8 @@ interface Props {
 const Sidebar: React.FC<Props> = (props) => {
     const [showMenu, setShowMenu] = useState<boolean>(true);
 
-    const unfillProgress = {backgroundColor: 'var(--the-white)', color: 'var(--the-black)'};
-    const fillProgress = {backgroundColor: 'var(--the-black)', color: 'white'};
+    const unfillProgress = {backgroundColor: 'white', color: 'var(--the-black)'};
+    const fillProgress = {backgroundColor: 'var(--second-color)', color: 'var(--the-black)'};
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -35,7 +36,7 @@ const Sidebar: React.FC<Props> = (props) => {
                 <div className="sidebar-container" style={showMenu ? {display: 'inline'} : {display: 'none'}}>
                     <div className="sidebar-scroll">
                         <div className="sidebar-titles">
-                            <h1>London Foot & Ankle Surgery</h1>
+                            <img className="pod-logo" src={logo} alt="Podogo Foot Clinic Logo" />
                             <h2>{props.title}</h2>
                         </div>
                         <hr />
@@ -68,7 +69,7 @@ const Sidebar: React.FC<Props> = (props) => {
                         <div className="sidebar-items">
                             <Link 
                                 text="Return To Main Website"
-                                to="https://londonfootandanklesurgery.co.uk"
+                                to="https://www.podogo.com"
                                 newTab={true}
                                 />
                             <Link 
@@ -78,18 +79,18 @@ const Sidebar: React.FC<Props> = (props) => {
                                 />
                             <Link 
                                 text="Email"
-                                to="mailto: admin@londonfootandanklesurgery.co.uk"
+                                to="mailto: admin@podogo.com"
                                 newTab={false}
                                 />                            
                             <Link 
                                 text="Telephone"
-                                to="tel:+442078208007"
+                                to="tel:+442074128882"
                                 newTab={false}
                                 />
                         </div>
                         <hr />
                         <div className="fine-print">
-                            ©{new Date().getFullYear()}, London Foot & Ankle Surgery Ltd.
+                            ©{new Date().getFullYear()}, Podogo Ltd.
                         </div>
                     </div>
                 </div>

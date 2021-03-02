@@ -10,7 +10,6 @@
     width: 70%;
     margin: auto;
     border: 1px solid var(--the-black);
-    border-radius: 10px;
 }
 
 .fu-pp-container {
@@ -49,11 +48,11 @@
 .fu-submit {
     width: 90%;
     border: none;
-    border-radius: 5px;
     margin: 0 0 20px;
     padding: 10px 0;
+    border: 1px solid var(--the-black);
     background-color: var(--second-color);
-    color: white;
+    color: var(--the-black);
     cursor: pointer;
     -webkit-appearance: none;
     outline: none;
@@ -70,16 +69,16 @@
     width: 90%;
     padding: 10px 0;
     margin: 20px 0;
-    border-radius: 5px;
     background-color: var(--second-color);
-    border: none;
-    color: white;
+    border: 1px solid var(--the-black);
+    color: var(--the-black);
     cursor: pointer;
     transition: .2s;
 }
 
 @media (hover:hover) {
     .fu-pay-in-clinic:hover {
+        color: white;
         background-color: var(--the-black);
     }
 }

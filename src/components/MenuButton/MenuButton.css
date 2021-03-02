@@ -6,6 +6,7 @@
     z-index: 2000;
     height: 40px;
     width: 40px;
+    border: 1px solid var(--the-black);
     border-radius: 5px;
     cursor: pointer;
     display: flex;
@@ -13,17 +14,17 @@
     justify-content: space-evenly;
     align-items: center;
     outline: none;
-    background-color: var(--second-color);
+    background-color: #00000000;
 }
 
 .stripe {
     width: 24px;
     height: 1px;
-    background-color: var(--the-white);
+    background-color: var(--the-black);
 }
 
 .exit-cross {
-    color: var(--the-white);
+    color: var(--the-black);
 }
 
 @media only screen and (max-width: 1025px) {
