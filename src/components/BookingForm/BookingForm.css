@@ -50,6 +50,7 @@
     margin: 10px auto;
     padding: 10px;
     border: 1px solid var(--the-black);
+    box-sizing: border-box;
     -webkit-appearance: none;
 }
 
