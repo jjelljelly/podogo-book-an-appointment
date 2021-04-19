@@ -27,7 +27,7 @@ const FuFinder: React.FC<Props> = (props) => {
         e.preventDefault()
         setFound(false)
         setLoad(true)
-        $.post("https://script.google.com/macros/s/AKfycbw1N-hxteK4WXKzXBDtDHeUxNB3LaF47vAES7nnPBNCsqWtG9HxWDvL/exec", 
+        $.post("https://script.google.com/macros/s/AKfycbz-aYMLkSrTD7jHLI_UySYKZyrpGnDkRtpZJ7bhdLAdtazPBts/exec", 
             details, 
             async (res) => {
                 let result = await JSON.parse(res);
