@@ -12,6 +12,7 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "jquery": "^3.5.1",
+    "places-autocomplete-react": "^1.0.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
